@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('oiM9Ym6x0HMur2n_e')
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="icono" class="icono">Menú</a>
+
+            <div class="enlaces uno" id="enlaces">
+                <center>
+                    <p>¿Deseas saber mas de nosotros?</p>
+                </center>
+
+                <div class="fila">
+                    <div class="card">
+                        <img src="img/nav1.jpg">
+                        <h4>Inicio</h4>
+                        <p>Bienvenido: Accede a la página principal y explora nuestras áreas de especialización y
+                            proyectos innovadores.</p>
+                        <a href="index.html">Ver más</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/nav2.jpg">
+                        <h4>Quiénes somos</h4>
+                        <p>Especialidades: Descubre nuestras diversas ramas, desde ciberseguridad y biotecnología hasta
+                            robótica y agronomía.</p>
+                        <a href="#" id="lanzar-modal-video">Ver más</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/nav3.jpg">
+                        <h4>Departamentos</h4>
+                        <p>Especialidades: Descubre nuestras diversas ramas, desde ciberseguridad y biotecnología hasta
+                            robótica y agronomía.</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/nav4.jpg">
+                        <h4>Proyectos</h4>
+                        <p>Innovación en Acción: Explora los proyectos en curso que impulsan el futuro en diferentes
+                            campos tecnológicos y científicos.</p>
+                        <a href="#" id="lanzar-modal-galery">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="textos">
+                <h1>V-BioCyberTech</h1>
+                <h2>Desarrollamos de forma ideal</h2>
+
+                <button class="btn" type="submit" id="lanzar-modal">Contactar!!</button>
+
+            </div>
+            <img src="img/1.svg">
+        </div>
+
+    </header>
+    <div class="wave">
+
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z"
+                    style="stroke: none; fill: #FFF;"></path>
+            </svg></div>
+    </div>
+    <!--Modal-->
+    <div class="contenedor-modal">
+        <div class="modal">
+            <a href="#" class="modal__close "> <i class="fas fa-times"></i></a>
+            <img class="img" src="img/m.svg" alt="">
+            <h3>Ponte en contacto con nosotros</h3>
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Tu Nombre</label>
+                    <br>
+                    <input type="text" name="from_name" id="from_name" required>
+                </div>
+                <div class="field">
+                    <label for="message">Tu Mensaje</label>
+                    <br>
+                    <input type="text" name="message" id="message" required>
+                </div>
+                <div class="field">
+                    <label for="email_id">Tu Correo</label>
+                    <br>
+                    <input type="text" name="email_id" id="email_id" required>
+                </div>
+                <input type="submit" id="button" value="Enviar y salir">
+            </form>
+
+        </div>
+    </div>
+
+    <!--Modal-->
+    <div class="contenedor-modal-video">
+        <div class="modal-video">
+            <a href="#" class="modal__close__video "> <i class="fas fa-times"></i></a>
+            <div class="trailer">
+                <video src="videos/Technology for Life.mp4" type="video/mp4" controls></video>
+
+            </div>
+            <br>
+            <h3>Conoce a V-BioCyberTech</h3>
+            <br>
+            <h4>V-BioCyberTech es una empresa de innovación tecnológica dedicada a mejorar la calidad de vida
+                mediante ciencia y tecnología. Nuestra misión es desarrollar soluciones avanzadas que enfrenten los
+                desafíos más importantes de la sociedad, trabajando en la intersección de diversas disciplinas.</h4>
+            <br>
+
+        </div>
+    </div>
+
+    <!--Modal de galeria-->
+    <div class="contenedor-modal-galery">
+        <div class="modal-galery">
+
+            <a href="#" class="modal__close__galery "> <i class="fas fa-times"></i></a>
+            <div class="Galery">
+
+                <div class="product">
+                    <h2 class="product-category">Departamentos</h2>
+                    <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+                    <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+                    <div class="product-container">
+
+                        <div class="product-card">
+                            <div class="product-image">
+
+                                <img src="img/b.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Ingeniería Biomédica</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+
+                                <img src="img/n.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Nanotecnología</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+
+                                <img src="img/e.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Energía y Medio Ambiente</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+
+                                <img src="img/c.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Computación</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+
+                                <img src="img/ci.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Ciberseguridad</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/a.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Agronomía</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                               
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/g.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Genómica</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/bio.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Biónica</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/biot.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">Revisar</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Biotecnología</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                               
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/r.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">add to wishlist</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Robótica</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/t.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">add to wishlist</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Telecomunicaciones</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-image">
+                                
+                                <img src="img/fondo.jpg" class="product-thumb" alt="">
+                                <button class="card-btn">add to wishlist</button>
+                            </div>
+                            <div class="product-info">
+                                <h2 class="product-brand">Inteligencia Artificial, ML</h2>
+                                <p class="product-short-description">a short line about the cloth..</p>
+                                
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</body>
+
+</html>
