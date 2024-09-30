@@ -1,9 +1,13 @@
 let boton = document.getElementById("icono");
 let enlaces = document.getElementById("enlaces");
+
 const btnLanzarModalG = document.querySelector('#lanzar-modal-galery');
 const modalG = document.querySelector('.modal__close__galery');
 const contModalG = document.querySelector('.contenedor-modal-galery');
 
+const btnLanzarModalGP = document.querySelector('#lanzar-modal-galery-p');
+const modalGP = document.querySelector('.modal__close__galery__p');
+const contModalGP = document.querySelector('.contenedor-modal-galery-p');
 
 let contador = 0;
 
@@ -43,4 +47,14 @@ btnLanzarModalG.addEventListener('click', (e) =>{
   
   modalG.addEventListener('click', (e) => {
     contModalG.classList.remove('mostrar');
-  })
+  });
+
+  btnLanzarModalGP.addEventListener('click', (e)=>{
+    contModalGP.classList.add('mostrar');
+  });
+  modalGP.addEventListener('click', (e)=>{
+    contModalGP.classList.remove('mostrar');
+  });
+
+
+  

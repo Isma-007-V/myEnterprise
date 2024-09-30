@@ -33,9 +33,6 @@ modalVideo.addEventListener('click', (e) => {
 })
 
 
-
-
-
 const btn = document.getElementById('button');
 
 document.getElementById('form')
@@ -59,3 +56,5 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
