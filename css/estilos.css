@@ -130,6 +130,7 @@ header {
 .container {
     width: 95%;
     max-width: 1200px;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -321,8 +322,8 @@ img {
     img {
         width: 100%;
         height: auto;
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 130px;
+        max-height: 130px;
     }
 
     .textos h1 {
